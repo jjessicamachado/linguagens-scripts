@@ -1,0 +1,108 @@
+body {
+  background: #f7f7f7;
+  color: #333;
+  font-size: 16px;
+  font-size: 1.1rem;
+  font-family: 'Rokkitt', serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+	font-size: 22px;
+	margin-bottom: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+h2{
+	font-size: 18px;
+    margin-bottom: 15px;
+}
+h3{
+	font-size: 16px;
+	margin-bottom: 10px; }
+
+* p:last-child{margin-bottom: 0 !important;}
+
+  a {
+    color: #c14616;
+    text-decoration: none;
+    -webkit-transition: all .2s linear;
+  	-moz-transition: all .2s linear;
+  	-o-transition: all .2s linear;
+  	-ms-transition: all .2s linear;
+  	transition: all .2s linear;
+  }
+
+.more:hover, a:hover .more {
+    color: #8e5999;
+  }
+
+a:hover {
+    text-decoration: underline;
+    color: #7e3215;
+  }
+
+  * {
+      box-sizing: border-box;
+      margin: 0;
+  }
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.formulario {
+  padding: 40px;
+  border: 1px solid rgba(0, 0, 0, .3);
+  text-align: center;
+}
+
+.header {
+  background: #000;
+  color: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.botao {
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #fff;
+  background-color: #c14616;
+  line-height: 1;
+  padding: .6em 1.2em;
+  border-radius: 0;
+  border-width: 0;
+  border-style: solid;
+  }
+
+.botao:hover,
+.botao:active,
+.botao:focus {
+  background-color: #f6cc00;
+  color: #fff;
+  }
