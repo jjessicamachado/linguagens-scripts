@@ -10,16 +10,13 @@
 <body>
 <div class="header"><h1>Consultar Cliente</h1></div>
 
-<div class="container">
-
 <div class="formulario">
   <form method="get" action="consulta_cliente.php" name="consulta">
     <label for="codigo" class="required">Código do cliente:</label> <input type="number" id="codigo" name="codigo" min="1" required><br>
     <input type="submit" value="Consultar" class="botao" onClick="return validar()">
 	</form>
-</div>
-<a href="localhost">Voltar</a>
-</div>
+</div><br>
+<a href="localhost" class="link">Voltar</a>
 
 </body>
 </html>

@@ -25,8 +25,8 @@
 
     <input type="submit" value="Enviar" class="botao" name="enviar">
 	</form>
-</div>
-<a href="localhost">Voltar</a>
+</div><br>
+<a href="/" class="link">Voltar</a>
 </div>
 
 </body>
