@@ -13,19 +13,17 @@
 <div class="container">
 
 <div class="formulario">
-  <form method="post" action="insere_cliente.php" id="insere" name="insere">
+<form method="post" name="insere" action="insere_cliente.php" onsubmit="return validacao()">
 
-		<label for="nome">Nome:</label>
-		<input type="text" id="nome" name="nome" size="20">
-		<span class='msg-erro msg-nome'></span><br>
+<p><label for="fname">Nome:</label> <input type="text" name="fname" id="fname" maxlength="50" autofocus>
+<span id="nomeerror" style="color: red; display: none; padding: 8px 0 8px 0;">Por favor, insira o nome.</span></p>
 
-    <label for="email">Email:</label>
-		<input type="email" id="email" name="email">
-		<span class='msg-erro msg-email'></span><br>
+<p><label for="femail">Email:</label> <input type="email" name="femail" id="femail" maxlength="40">
+<span id="emailerror" style="color: red; display: none; padding: 8px 0 8px 0;">Por favor, insira o e-mail.</span></p>
 
-    <input type="submit" value="Enviar" class="botao" name="enviar">
-	</form>
-</div><br>
+<input type="submit" value="Enviar" class="botao">
+</div>
+<br>
 <a href="/" class="link">Voltar</a>
 </div>
 

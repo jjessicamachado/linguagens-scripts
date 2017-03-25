@@ -75,7 +75,7 @@ a:hover {
 }
 
 .botao {
-  margin-top: 20px;
+  margin: 0;
   position: relative;
   display: inline-block;
   text-align: center;
@@ -89,7 +89,6 @@ a:hover {
   border-radius: 0;
   border-width: 0;
   border-style: solid;
-  margin-bottom: 0;
   }
 
 .botao:hover,
@@ -102,6 +101,3 @@ a:hover {
   .link {
     margin: 0 auto; display: table;
   }
-
-  .msg-erro {
-    color: red; }

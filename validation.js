@@ -1,43 +1,34 @@
-var form = document.getElementById("insere");
+function validacao () {
+  var nome = document.insere.fname.value.trim();
+  var email = document.insere.femail.value.trim();
 
-if (form.addEventListener) {
-    form.addEventListener("submit", validaCadastro);
-} else if (form.attachEvent) {
-    form.attachEvent("onsubmit", validaCadastro);
+      if (nome==="") {
+        var nome = document.getElementById('nomeerror');
+        nome.style.display = 'block';
+        document.insere.fname.focus();
+        return false;
+      }
+      else if (email==="") {
+        var email = document.getElementById('emailerror');
+        email.style.display = 'block';
+        document.insere.femail.focus();
+        return false;
+      }
+      else {
+        return true;
+      }
 }
 
-function validaCadastro(evt){
-	var nome = document.getElementById('nome');
-	var email = document.getElementById('email');
-	var filtro = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-	var contErro = ;
+function validacodigo() {
+  var code = document.consulta.codigo.value;
 
+        if (code==="" || code < 1) {
+          var code = document.getElementById('codeerror');
+          code.style.display = 'block';
+          document.consulta.codigo.focus();
+          return false;
+        }
+  }
 
-	/* Validação do campo nome */
-	caixa_nome = document.querySelector('.msg-nome');
-	if(nome.value == ""){
-		caixa_nome.innerHTML = "Favor preencher o Nome";
-		caixa_nome.style.display = 'block';
-		contErro += 1;
-	} else {
-		caixa_nome.style.display = 'none';
-	}
-
-	/* Validação do campo email */
-	caixa_email = document.querySelector('.msg-email');
-	if(email.value == ""){
-		caixa_email.innerHTML = "Favor preencher o E-mail";
-		caixa_email.style.display = 'block';
-		contErro += 1;
-	} else if(filtro.test(email.value)){
-		caixa_email.style.display = 'none';
-	} else {
-		caixa_email.innerHTML = "Formato do E-mail inválido";
-		caixa_email.style.display = 'block';
-		contErro += 1;
-	}
-
-	if(contErro > ){
-		evt.preventDefault();
-	}
-}
+//$('nome').val() === ""
+//$('#nomeerror').show(); **/

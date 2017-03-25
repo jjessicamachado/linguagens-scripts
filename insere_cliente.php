@@ -18,8 +18,8 @@
       $select_db = mysql_select_db("lapasta"); //seleciona o banco de dados
 
       //Abaixo atribuímos os valores provenientes do formulário pelo método POST
-      $nome = $_POST["nome"];
-      $email = $_POST["email"];
+      $nome = $_POST["fname"];
+      $email = $_POST["femail"];
 
       $string_sql = "INSERT INTO clientes (cod_cliente,nome_cliente,email_cliente) VALUES (null,'$nome','$email')"; //String com consulta SQL da inserção
 
